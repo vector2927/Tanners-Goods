@@ -20,7 +20,7 @@ body {
   text-align: left;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -47,6 +47,10 @@ a {
 * {
   font-family: Montserrat Regular, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Ubuntu;
   scroll-behavior: smooth;
+}
+
+body {
+  height: 3000px;
 }
 
 .container {
@@ -93,7 +97,7 @@ a {
 
 .navySalt {
   width: 100vw;
-  height: 600px;
+  height: 700px;
   display: flex;
 }
 .navySalt__bagImg {
@@ -198,4 +202,81 @@ a {
   width: 40px;
   height: 1px;
   background-color: #b8a47e;
+}
+
+.voyager {
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+}
+.voyager__header {
+  width: 800px;
+  height: 100px;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 32.5%;
+  margin: 283px 0 0 0;
+  text-align: right;
+}
+.voyager__header h1 {
+  font-family: "Montserrat Bold";
+  font-size: 3em;
+  padding: 0 3.8% 0 0;
+  letter-spacing: 0.265em;
+}
+.voyager__header p {
+  margin: 17px;
+  font-size: 1.3em;
+}
+.voyager__img {
+  margin: 72px 0 0 0;
+  width: 1280px;
+  height: 574px;
+  z-index: -3;
+}
+.voyager__textbox {
+  width: 46.5%;
+  height: 315px;
+  display: block;
+  position: absolute;
+  right: 8.2%;
+  margin: 179px 0 0 0;
+  border: 3px solid #b8a47e;
+  z-index: 1;
+}
+.voyager__textbox__text {
+  display: flex;
+  position: absolute;
+  right: 9.8%;
+  top: 56px;
+  width: 38%;
+  height: auto;
+}
+.voyager__textbox__text .text {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  line-height: 35px;
+  font-size: 0.95em;
+  line-height: 2.55em;
+  letter-spacing: -0.02em;
+}
+.voyager__arrowbox {
+  right: 16.3%;
+  margin: 485px 0 0 0;
+}
+
+.arrowbox {
+  width: 195px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.arrowbox .arrow {
+  width: 15px;
 }/*# sourceMappingURL=index.css.map */
