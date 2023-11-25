@@ -1,0 +1,185 @@
+@import "mixins/window_size.scss";
+@import "mixins/reset.scss";
+@import "mixins/font.scss";
+
+*{
+    font-family: Montserrat Regular, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Ubuntu;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: block;
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+    left:12px;
+    position: absolute;
+}
+
+.navbar{
+    @include font-bold;
+    height:140px;
+    display: flex;
+
+    &__nav{
+        margin: 0 0 0 365px;
+        display: flex;
+        align-items: center;
+        letter-spacing: normal;
+
+        &__item{
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .item-2{
+            margin: 0 0 0 92px;
+        }
+
+        .item-3{
+            padding: 0 0 0 81px;
+            color: #ffffff;
+        }
+
+        .item-4{
+            padding: 0 0 0 92px;
+            color: #ffffff;
+        }
+
+        .item-5{
+            padding: 0 0 0 76px;
+            color:#ffffff;
+        }
+    }
+}
+
+.navySalt{
+    
+    width: 100vw;
+    height: 600px;
+    display: flex;
+
+    &__bagImg {
+        width: 65.2vw;
+        position:absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+
+    &__contents{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &__nav{
+            height: auto;
+            width: 12%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;  
+            padding : 50px 0 0 2px;
+
+            .up-icon{
+                font-size: 1.8em;
+                color : #b8a47e;
+            }
+            .down-icon{
+                font-size: 1.8em;
+                color : black;
+                padding: 18px 0 0 0;
+            }
+
+            .vertical-line{
+                margin: 5px 0 0 0;
+            }
+
+            .circle{
+                width: 76px;
+                height: 76px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+                box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin : 33px 0 0 0;
+
+                p{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                }
+            }
+
+            ul{
+                margin: 20px 0 0 0;
+                font-size: 1.1em;
+                font-weight: bold;
+
+                li{
+                    padding:19px 0 0 0;
+                }
+            }
+        }
+
+        &__text{
+            padding:178px 0 0 118px;
+
+            p{
+                @include font-regular;
+                font-size: 1.3em;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+            
+            h1{
+                @include font-bold;
+
+                padding: 23px 0 0 0;
+                font-size: 3.2em;
+                font-weight: 400;
+                letter-spacing: 10px;
+                word-spacing: 5px;
+            }
+
+            .horizontal-line{
+                display: inline-block;
+            }
+
+            .link {
+                font-size: 1.3em;
+                font-weight: bold;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                margin: 63px 0 0 100px;
+
+                span{
+                    padding:0 0 0 18px;
+                    color: #b8a47e;
+                }
+
+                .right-icon{
+                    padding:0 0 0 12px;
+                    color : #b8a47e;
+                }
+            }
+        }
+    }
+
+}
+
+.vertical-line{
+    width: 1px;
+    height: 40px;
+    background-color: #b8a47e;
+}
+
+.horizontal-line{
+    width: 40px;
+    height: 1px;
+    background-color: #b8a47e;
+}
